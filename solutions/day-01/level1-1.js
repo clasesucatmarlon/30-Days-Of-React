@@ -1,7 +1,7 @@
 // EJERCICIO NIVEL 1:
 // ================================================
 
-const países = [ 
+const paises = [ 
   'Albania', 
   'Bolivia', 
   'Canadá', 
