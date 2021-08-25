@@ -1,0 +1,128 @@
+.app {
+  width: 80%;
+  background-color: burlywood;
+  margin: 0 auto;
+}
+
+.skill, .formulary{
+  width: 100%;
+  background-color: rgb(224, 217, 217);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.skill  .skill__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 50px;
+  text-align: center;
+  margin: 10px 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.styleImg {
+  width: 20%;
+  height: 80%;
+}
+
+.formulary {
+  background-color: rgb(187, 231, 241);
+}
+.formulary h5{
+  margin: 10px 0;
+}
+.formulary p {
+  margin: 10px 0;
+  font-size: .6rem;
+}
+
+.formulary__forms {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.formulary__forms-inputs {
+  display: flex;
+}
+
+.formulary__forms input {
+  width: 30%;
+  border-radius: 3px;
+  border: none;
+  font-size: .5rem;
+  padding: 5px;
+  margin: 0 5px;
+}
+.formulary__button {
+  width: 100%;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+.formulary__button button {
+  width: 40%;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(248, 112, 112);
+  padding: 5px;
+  font-size: .5rem;
+  color: white;
+}
+
+.container {
+  background-color: rgb(224, 217, 217);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.card {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(96, 116, 146);
+  border-radius: 4px;
+}
+.card__info  {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card__info img {
+  width: 50%;
+  border-radius: 50%;
+  padding: 10px 0;
+}
+.card__info h5 {
+  font-size: .75rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+.card__info h6 {
+  margin-top: 10px 0 0 0;
+}
+.card__skills {
+  width: 100%;
+}
+.card__skills ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card__skills ul li {
+  background-color: rgb(47, 184, 172);
+  list-style: none;
+  border-radius: 3px;
+  font-size: .6rem;
+  padding: 3px 5px;
+  color: white;
+  margin: 4px 4px;
+}
