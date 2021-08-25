@@ -1,9 +1,7 @@
 # 1. REACT.  
   
   ## 1.1. ¿Qué es React?
-  ```
-  Es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página
-  ```  
+  > Es una biblioteca Javascript de código abierto diseñada para crear interfaces de usuario con el objetivo de facilitar el desarrollo de aplicaciones en una sola página
   
   ## 1.2. ¿Qué es una biblioteca?
   ```
