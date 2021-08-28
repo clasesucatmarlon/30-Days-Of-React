@@ -1,0 +1,25 @@
+.card__content {
+  margin: 1rem 0 10px 0;
+  border: 1px solid gray;
+  border-radius: 7px;
+  .card__content-owner {
+    width: 17%;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 0.7rem;
+      .bi {
+        padding-left: 5px;
+        color: #518cef;
+      }
+    }
+    img {
+      width: 75%;
+      border-radius: 50%;
+    }
+  }
+}

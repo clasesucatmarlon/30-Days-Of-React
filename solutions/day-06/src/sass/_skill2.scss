@@ -1,0 +1,28 @@
+.skill2__content {
+  margin: 10px 0 0 0;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  table {
+    width: 20%;
+    margin-top: 10px;
+    thead {
+      background-color: #518cef;
+      font-size: 1rem;
+      text-align: left;
+      width: 200px;
+    }
+  }
+}
+
+tr td {
+  background-color: tomato;
+  font-size: .9rem;
+}
+.level {
+  text-align: center;
+}
