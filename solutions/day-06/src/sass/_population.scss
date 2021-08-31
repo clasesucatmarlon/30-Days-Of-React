@@ -1,3 +1,16 @@
+@mixin populationData {
+  width: 15%;
+  font-size: 1rem;
+  background-color: white;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white; 
+  border-left: 1px solid white; 
+  border-top: 1px solid white; 
+}
 .population__content {
   margin: 10px 0 0 0;
   padding: 10px;
@@ -19,17 +32,7 @@
   display: flex;
   align-items: center;
   .country {
-    width: 15%;
-    font-size: 1rem;
-    background-color: white;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid white; 
-    border-left: 1px solid white; 
-    border-top: 1px solid white; 
+    @include populationData();
   }
   .bar {
     width: 70%;
@@ -40,18 +43,6 @@
     border-top: 1px solid white; 
   }
   .percentaje {
-    width: 15%;
-    font-size: 1rem;
-    background-color: white;
-    margin-bottom: 10px;
-    padding-left: 10px;
-    height: 36px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid white; 
-    border-right: 1px solid white; 
-    border-top: 1px solid white; 
+    @include populationData();
   }
 }
-
-

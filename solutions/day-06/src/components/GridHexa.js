@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Hexa from "./Funcions";
+
 const Color = ({col}) => {
   const styleColor = {
     background: `${col}`,
@@ -24,7 +26,7 @@ const GridHexa = () => {
   for (let i = 1; i < 32; i++) {
     array.push(i);
   }
-  const hexa = () => {
+  /* const hexa = () => {
     let str = "12345678abcdef";
     let color = "";
     for (let i = 0; i < 6; i++) {
@@ -32,7 +34,7 @@ const GridHexa = () => {
       color += str[index];
     }
     return "#" + color;
-  };
+  }; */
 
   return ( 
     <div className="gridhexa__content">
@@ -40,7 +42,7 @@ const GridHexa = () => {
       <div className="gridhexa__content-grid">
         {
           array.map(item => (
-            <Color col={hexa()} />
+            <Color col={Hexa()} />
           ))
         }
       </div>

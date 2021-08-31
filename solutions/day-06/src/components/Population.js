@@ -1,36 +1,11 @@
 import React from "react";
 
-/* import data from "./data"; */
+import Data from "./data";
+import Hexa from "./Funcions";
 
-const WitdhColor = ({item}) => {
-  const styleColor = {
-    backgroundColor: `red`,
-    width: `${item}%`,
-    margin: '5px',
-    height: '25px',
-  };
-  return (
-    <div style={styleColor}>
-      {item}
-    </div> 
-  )
-}
 
 const Population = () => {
-  const Data = [
-    { country: 'World', population: 7693165599 },
-    { country: 'China', population: 1377422166 },
-    { country: 'India', population: 1295210000 },
-    { country: 'USA', population: 323947000 },
-    { country: 'Indonesia', population: 258705000 },
-    { country: 'Brazil', population: 206135893 },
-    { country: 'Pakistan', population: 194125062 },
-    { country: 'Nigeria', population: 186988000 },
-    { country: 'Bangladesh', population: 161006790 },
-    { country: 'Russian Federation', population: 146599183 },
-    { country: 'Japan', population: 126960000 },
-  ]
-  
+  // Calculo de los porcentajes y creación de nuevo array de objetos
   const totalWorld = Data[0].population;
   let percentageCountry = 0
   let value = Data.map( (item) => {
@@ -43,8 +18,17 @@ const Population = () => {
   })
 
   const Country = ({item: {country, population, percentaje}}) => {
+    /* const hexa = () => {
+      let str = "12345678abcdef";
+      let color = "";
+      for (let i = 0; i < 6; i++) {
+        let index = Math.floor(Math.random() * str.length);
+        color += str[index];
+      }
+      return "#" + color;
+    }; */
     const styleColor = {
-      backgroundColor: `red`,
+      backgroundColor: `${Hexa()}`,
       width: `${percentaje}%`,
       height: '36px',
     };
@@ -79,7 +63,6 @@ const Population = () => {
       </div>
     )
   }
-
 
   return (
     <div className="population__content"> 
