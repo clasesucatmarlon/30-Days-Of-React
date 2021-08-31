@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Hexa from "./Funcions";
+import Hexa from "../functions/Funcions";
 
 const Color = ({col}) => {
   const styleColor = {

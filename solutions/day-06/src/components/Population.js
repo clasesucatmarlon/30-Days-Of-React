@@ -1,7 +1,7 @@
 import React from "react";
 
 import Data from "./data";
-import Hexa from "./Funcions";
+import Hexa from "../functions/Funcions";
 
 
 const Population = () => {
