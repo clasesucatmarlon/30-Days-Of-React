@@ -7,6 +7,8 @@ import Formulary from "./Formulary";
 import HexaColor from "./HexaColor";
 import Numbers from "./Numbers";
 import Counter from './Counter';
+import GridHexa from './GridHexa';
+import Population from './Population';
 
 const Main = ({ techs, author, skills }) => {
   const skills2 = [
@@ -44,6 +46,8 @@ const Main = ({ techs, author, skills }) => {
         </div>
         <Skills2Global skills2={skills2} />
         <Numbers />
+        <GridHexa />
+        <Population />
       </div>
     </main>
   );
