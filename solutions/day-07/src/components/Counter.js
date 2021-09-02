@@ -31,10 +31,12 @@ export default Counter; */
 
 
 class Counter extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { count: 0, value: 8}
+  // Declarar estado
+  state = { 
+    count: 0,
+    value: 8
   }
+
   render () {
     const increase = () => {
       this.setState({count: this.state.count + 1});
