@@ -1,0 +1,14 @@
+.header__content {
+  padding: 1.25rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    border-bottom: 1px solid white;
+    width: 90%;
+    text-align: center;
+  }
+}
