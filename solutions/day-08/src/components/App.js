@@ -43,7 +43,7 @@ const App = () => {
   const [status, setStatus] = useState(true);
 
   const handleColour = (e) => {
-    status ? setColour({backgroundColor: '#272221', color: '#F7F1F0'}): setColour({backgroundColor: ''})
+    status ? setColour({backgroundColor: '#0F172A', color: '#F7F1F0'}): setColour({backgroundColor: ''})
     setStatus(!status)
   }
 
