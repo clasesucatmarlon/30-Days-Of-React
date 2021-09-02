@@ -8,7 +8,7 @@ const Data = [
   { 'country': 'Pakistan', population: 194125062 },
   { 'country': 'Nigeria', population: 186988000 },
   { 'country': 'Bangladesh', population: 161006790 },
-  { 'country': 'Russian Federation', population: 4146599183 },
+  { 'country': 'Russian Federation', population: 6146599183 },
   { 'country': 'Japan', population: 5026960000 },
 ]
 
