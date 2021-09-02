@@ -35,8 +35,6 @@ class Counter extends React.Component {
     super(props);
     this.state = { count: 0, value: 8}
   }
-  
-  
   render () {
     const increase = () => {
       this.setState({count: this.state.count + 1});
@@ -45,7 +43,6 @@ class Counter extends React.Component {
     const decrease = () => {
       this.setState({count: this.state.count - 1});
       this.setState({value: this.state.value - 1});
-
     };
     return (
       <div className="count__content">
