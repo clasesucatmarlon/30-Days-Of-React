@@ -1,0 +1,48 @@
+@mixin populationData {
+  width: 15%;
+  font-size: 1rem;
+  background-color: white;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white; 
+  border-left: 1px solid white; 
+  border-top: 1px solid white; 
+}
+.population__content {
+  margin: 10px 0 0 0;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  background-color: #518cef;
+  justify-content: center;
+  align-items: center;
+  h5 {
+    margin-bottom: 20px;
+  }
+  .gridbar__content-grid {
+    width: 90%;
+  }
+}
+.population__data {
+  display: flex;
+  align-items: center;
+  .country {
+    @include populationData();
+  }
+  .bar {
+    width: 70%;
+    margin-bottom: 10px;
+    background-color: white;
+    border-bottom: 1px solid white; 
+    border-left: 1px solid white; 
+    border-top: 1px solid white; 
+  }
+  .percentaje {
+    @include populationData();
+  }
+}
