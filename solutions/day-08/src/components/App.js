@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 
 /* IMPORT COMPONENTS */
+import InfoCountries from './InfoCountries';
 import Footer from './Footer';
 import Header from './Header';
 import Main from './Main';
@@ -55,6 +56,9 @@ const App = () => {
         <div className="app__button">
           <button onClick={handleColour} >Cambiar fondo</button>
         </div>
+
+        <InfoCountries />
+
         <Main techs={techs} author={data.author} skills={skills} />
       </div>
       <Footer copyright={copyright} />

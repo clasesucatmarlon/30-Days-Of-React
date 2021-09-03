@@ -31,6 +31,75 @@
   border-radius: 10px;
 }
 
+.infocountries__content {
+  background-color: #518cef;
+  margin-top: 20px;
+  margin: 10px 0 0 0;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.infocountries__content h5 {
+  margin-bottom: 20px;
+}
+.infocountries__content .card__country {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f5eded;
+  border-radius: 10px;
+}
+.infocountries__content img {
+  width: 160px;
+  height: 100px;
+}
+.infocountries__content h4 {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.infocountries__content .card__country-information {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+}
+.infocountries__content .card__country-information table thead {
+  height: 25px;
+  background-color: #518CEF;
+  color: black;
+  font-size: 0.7rem;
+}
+.infocountries__content .card__country-information table tbody td {
+  padding-top: 5px;
+  font-size: 0.7rem;
+  color: #518CEF;
+  text-align: center;
+  background-color: transparent;
+}
+.infocountries__content .card__country-button {
+  display: flex;
+  padding: 10px;
+  margin-top: 20px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.infocountries__content .card__country-button button {
+  height: 30px;
+  width: 100px;
+  text-align: center;
+  border: none;
+  background-color: #518CEF;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
 .header__content {
   padding: 1.25rem;
   background-color: black;
