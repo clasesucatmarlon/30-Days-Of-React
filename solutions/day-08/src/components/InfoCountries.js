@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+// REST API: https://restcountries.eu/
 
 const InfoCountries = () => {
   const [countries, setCountries] = useState()
@@ -18,20 +19,15 @@ const InfoCountries = () => {
   }
 
   const getCountry =  async (randomElement) => {
-    //console.log('el pais seleccionad es: ', randomElement)
     const url2 = `https://restcountries.eu/rest/v2/alpha/${randomElement}`
     const response2 = await fetch(url2)
     const responseJSON2 = await response2.json()
-    //console.log('la data del pais es: ', responseJSON2)
     setCountry(responseJSON2)
     console.log(responseJSON2)
   }
 
   useEffect(() => {
-  
     getCountries()
-
-  
     console.log(country)
   }, [])
 
