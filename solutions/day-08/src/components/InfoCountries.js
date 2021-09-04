@@ -19,13 +19,10 @@ const InfoCountries = () => {
   }
 
   const getCountry =  async (randomElement) => {
-    //console.log('el pais seleccionad es: ', randomElement)
-    const url2 = `https://restcountries.eu/rest/v2/alpha/${randomElement}`
-    const response2 = await fetch(url2)
+    const urlCountry = `https://restcountries.eu/rest/v2/alpha/${randomElement}`
+    const response2 = await fetch(urlCountry)
     const responseJSON2 = await response2.json()
-    //console.log('la data del pais es: ', responseJSON2)
     setCountry(responseJSON2)
-    console.log(responseJSON2)
   }
 
   useEffect(() => {
@@ -43,19 +40,21 @@ const InfoCountries = () => {
             <thead>
               <tr>
                 <th>Capital</th>
+                <td>{country.capital ? country.capital : 'No information'}</td>
+              </tr>
+              <tr>
                 <th>Languaje</th>
+                <td>{country.languages ? country.languages[0].name : 'No information'}</td>
+              </tr>
+              <tr>
                 <th>Currencie</th>
+                <td>{country.currencies ? country.currencies[0].name : 'No information'}</td>
+              </tr>
+              <tr>
                 <th>Population</th>
+                <td>{country.population ? country.population.toLocaleString("es-ES") : 'No information'} hab.</td>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>{country.capital ? country.capital : 'No information'}</td>
-                <td>{country.languages ? country.languages[0].name : 'No information'}</td>
-                <td>{country.currencies ? country.currencies[0].name : 'No information'}</td>
-                <td>{country.population ? country.population.toLocaleString("es-ES") : 'No information'}</td>
-              </tr>
-            </tbody>
           </table>
         </div>
 

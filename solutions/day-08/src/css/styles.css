@@ -53,15 +53,21 @@
   padding: 20px;
   background-color: #f5eded;
   border-radius: 10px;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.5);
 }
 .infocountries__content img {
+  margin-bottom: 15px;
   width: 160px;
   height: 100px;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.5);
 }
 .infocountries__content h4 {
+  width: 100%;
+  border-bottom: 1px solid gray;
   margin-bottom: 15px;
   text-transform: uppercase;
   font-size: 1rem;
+  text-align: center;
 }
 .infocountries__content .card__country-information {
   display: flex;
@@ -69,18 +75,27 @@
   align-items: left;
   width: 100%;
 }
-.infocountries__content .card__country-information table thead {
-  height: 25px;
+.infocountries__content .card__country-information table {
+  margin-top: 20px;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.5);
+}
+.infocountries__content .card__country-information table thead tr {
+  height: 35px;
   background-color: #518CEF;
   color: black;
-  font-size: 0.7rem;
+  text-align: left;
 }
-.infocountries__content .card__country-information table tbody td {
-  padding-top: 5px;
-  font-size: 0.7rem;
-  color: #518CEF;
-  text-align: center;
-  background-color: transparent;
+.infocountries__content .card__country-information table thead tr th {
+  font-size: 0.9rem;
+  padding-left: 15px;
+  width: 30%;
+  color: white;
+}
+.infocountries__content .card__country-information table thead tr td {
+  font-size: 0.8rem;
+  width: 70%;
+  background-color: violet;
+  padding-left: 10px;
 }
 .infocountries__content .card__country-button {
   display: flex;
